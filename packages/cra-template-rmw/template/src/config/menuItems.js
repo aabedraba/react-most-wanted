@@ -15,6 +15,7 @@ import Security from '@material-ui/icons/Security'
 import SettingsIcon from '@material-ui/icons/SettingsApplications'
 import StyleIcon from '@material-ui/icons/Style'
 import VerticalAlignBottomIcon from '@material-ui/icons/VerticalAlignBottom'
+import DescriptionIcon from '@material-ui/icons/Description'
 import allLocales from './locales'
 import allThemes from './themes'
 
@@ -121,6 +122,12 @@ const getMenuItems = props => {
       visible: isAuthorised,
       primaryText: intl.formatMessage({ id: 'about' }),
       leftIcon: <InfoOutlined />,
+    },
+    {
+      value: '/docs',
+      visible: isAuthorised,
+      primaryText: intl.formatMessage({ id: 'docs' }),
+      leftIcon: <DescriptionIcon />,
     },
     {
       visible: isAuthorised, // In prod: isGranted('administration'),
