@@ -177,7 +177,7 @@ export default function LandingPage() {
                     marginTop: -40,
                   }}
                 >
-                  React Starter-Kit with all the Most Wanted features
+                  React Starter-Kit with all the most wanted features
                 </h4>
               </div>
             </div>
